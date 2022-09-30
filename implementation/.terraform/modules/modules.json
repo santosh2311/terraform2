@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"ec2_instance","Source":"../ec2","Dir":"../ec2"},{"Key":"s3_bucket","Source":"../s3","Dir":"../s3"},{"Key":"","Source":"","Dir":"."}]}
