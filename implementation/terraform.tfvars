@@ -3,4 +3,4 @@ ec2_loop = {
     "ins_2" : "santosh_ins_2"
 }
 
-s3_count = ["santoshbucket1",santoshbucket2]
+s3_count = ["santoshbucket1","santoshbucket2"]
