@@ -1,13 +1,9 @@
-module "ec2_ins" {
-  source = "../ec2"
-  name = var.ins_name
-  bucket_name2 = "2nd buck"
+module "ec2_instance" {
+  source       = ".//ec2"
+  resource_ec2 = var.ec2_loop
 }
 
-
-
-module "s3_buck" {
-  source = "../s3"
-  bucket_name = var.s3_name
-  acl = "private"
+module "s3_bucket" {
+  source      = ".//s3"
+  resource_s3 = var.s3_count
 }
