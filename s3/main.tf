@@ -1,13 +1,9 @@
 resource "aws_s3_bucket" "b" {
-  bucket = "var.bucket_name"
+  count  = length(var.resource_s3)
+  bucket = var.resource_s3[count.index]
 
   tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
+    Owner   = "santosh.kumar@cloudeq.com"
+    Purpose = "assignment"
   }
-}
-
-resource "aws_s3_bucket_acl" "example" {
-  bucket = var.bucket_name
-  acl    =var.acl
 }

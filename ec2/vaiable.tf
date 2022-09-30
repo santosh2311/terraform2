@@ -1,7 +1,3 @@
-variable "name" {
-  type = string
-}
-
-variable "bucket_name2" {
-  type = string
+variable "resource_ec2" {
+  type = map(any)
 }
