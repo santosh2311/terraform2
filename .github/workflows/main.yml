@@ -11,7 +11,7 @@ on:
 env:
   BUCKET: santosh-bucket
   TFSTATE_FILE: S3.tfstate
-  aws-region: us-east-1
+  aws-region: ap-south-1
 
 jobs:
   terraform_plan:
