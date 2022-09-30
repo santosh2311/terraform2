@@ -10,7 +10,7 @@ on:
     #- main    
 env:
   BUCKET: santosh-bucket
-  TFSTATE_FILE: S3.tfstate
+  TFSTATE_FILE: new.tfstate
   aws-region: us-east-1
 
 jobs:
