@@ -38,8 +38,8 @@ jobs:
       
       - name: terraform init  
         run: 
-            cd implementation
-            terraform init -reconfigure -backend-config="bucket=${{env.BUCKET}}" -backend-config="key=${{env.TFSTATE_FILE}}"
+          cd implementation
+          terraform init -reconfigure -backend-config="bucket=${{env.BUCKET}}" -backend-config="key=${{env.TFSTATE_FILE}}"
       
       - name: terraform plan
         run: 
