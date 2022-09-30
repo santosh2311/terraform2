@@ -41,8 +41,7 @@ jobs:
           terraform init -reconfigure -backend-config="bucket=${{env.BUCKET}}" -backend-config="key=${{env.TFSTATE_FILE}}"
       
       - name: terraform plan
-        run: |
-          terraform plan -var-file="terraform.tfvars"
+        run: terraform plan 
       - name: terraform apply
         run: |
           terraform apply -var-file="terraform.tfvars" -auto-approve   
