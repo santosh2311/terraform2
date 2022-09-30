@@ -9,7 +9,7 @@ on:
    # branches:
     #- main    
 env:
-  BUCKET: santosh-bucket
+  BUCKET: santosh-assignment3
   TFSTATE_FILE: new.tfstate
   aws-region: us-east-1
 
