@@ -11,6 +11,7 @@ on:
 env:
   BUCKET: santosh-assignment3
   TFSTATE_FILE: new.tfstate
+  DB_TABLE: santosh-demo-b5
   aws-region: us-east-1
 
 jobs:
@@ -39,7 +40,7 @@ jobs:
       - name: terraform init  
         run: 
           cd implementation
-          terraform init -reconfigure -backend-config="bucket=${{env.BUCKET}}" -backend-config="key=${{env.TFSTATE_FILE}}"
+           terraform init 
       
       - name: terraform plan
         run: 
